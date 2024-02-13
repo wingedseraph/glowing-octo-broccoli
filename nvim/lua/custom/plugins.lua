@@ -371,6 +371,10 @@ local plugins = {
 		},
 	},
 	{
+		"jghauser/mkdir.nvim",
+		event = "VeryLazy",
+	},
+	{
 		"zeioth/garbage-day.nvim",
 		enabled = true,
 		dependencies = "neovim/nvim-lspconfig",

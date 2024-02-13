@@ -11,7 +11,7 @@ local sources = {
 	-- b.formatting.htmlbeautifier.with({ filetypes = { "html" } }), -- for no warnings in w3 validator
 	b.diagnostics.eslint_d,
 	-- Lua
-	-- b.formatting.stylua,
+	b.formatting.stylua,
 	-- Python
 	b.formatting.autopep8.with({ filetypes = { "python" } }),
 	-- cpp

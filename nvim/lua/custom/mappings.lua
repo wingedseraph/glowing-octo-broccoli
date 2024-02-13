@@ -156,7 +156,7 @@ M.general = {
 		["1"] = { "$", "go to end of line", opts = { nowait = true } },
 
 		-- probably working :x
-		["<leader>cc"] = {
+		["gx"] = {
 			function()
 				local cursor_position = vim.fn.getpos(".")
 				local line = vim.fn.getline(cursor_position[2])
@@ -168,7 +168,8 @@ M.general = {
 					else
 						vim.fn.setreg('"', url) -- Fallback to default register
 					end
-					print(url)
+					-- print(url)
+					vim.cmd("silent !open " .. url)
 				else
 					print("No URL found under the cursor.")
 				end

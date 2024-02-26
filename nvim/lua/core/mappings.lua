@@ -231,7 +231,8 @@ M.lspconfig = {
 
 		["<leader>q"] = {
 			function()
-				vim.diagnostic.setloclist()
+				-- vim.diagnostic.setloclist()
+				require("trouble").toggle()
 			end,
 			"Diagnostic setloclist",
 		},

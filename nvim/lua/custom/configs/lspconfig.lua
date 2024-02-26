@@ -12,7 +12,7 @@ local servers = {
 	"tsserver",
 	-- "denols",
 	"clangd",
-  "gopls"
+	"gopls",
 }
 
 for _, lsp in ipairs(servers) do
